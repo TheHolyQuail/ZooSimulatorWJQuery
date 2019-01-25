@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Zoo Simulator</title>
+</head>
+    <body>
+
+    <!--has the  menu and buttons to create new animals for the zoo-->
+        <div class="w3-panel w3-pale-yellow w3-leftbar w3-rightbar w3-border-blue" id="creation">
+            <select class="" id="animalType">
+                <option value="none">species</option>
+                <option value="tiger">tiger</option>
+                <option value="bear">bear</option>
+                <option value="bee">bee</option>
+                <option value="giraffe">giraffe</option>
+                <option value="unicorn">Unicorn</option>
+                <!--"other" option added when more than 3 animals are removed. It creates a monstrosity-->
+                <!--<option value="monstrosity">other</option>-->
+            </select>
+            <br id="break">
+            <span id="span">name</span>
+            <textarea id="name"></textarea>
+            <button class="w3-btn w3-blue" id="create">create animal</button>
+
+        </div>
+
+        <!--when an animal is clicked this will show and let you edit the animal or feed it-->
+        <div class="" id="animalSpecific" style="display: none">
+
+            <div class="w3-panel w3-pale-yellow w3-leftbar w3-rightbar w3-border-blue" id="foodSelect">
+                <select class="" id="foodType">
+                    <option value="none">food type</option>
+                    <option value="meat">meat scraps</option>
+                    <option value="fish">fish</option>
+                    <option value="beef">beef</option>
+                    <option value="chicken">chicken</option>
+                    <option value="soy">soy burger</option>
+                    <option value="beans">beans</option>
+                    <option value="grass">grass</option>
+                    <option value="fruit">fruit scraps</option>
+                    <option value="sugar">sugar cane</option>
+                    <option value="grain">grain</option>
+                    <option value="leaves">salad greens</option>
+                    <option value="honey">honey</option>
+                    <option value="nectar">nectar</option>
+                    <option value="mercury">mercury</option>
+                    <option value="silver">silver apples</option>
+                    <option value="gold">golden carrots</option>
+                    <option value="pearl">pearl pie</option>
+                    <!--creating a monstrosity will add suspicious stew to the list   <option value="stew">suspicious stew</option>-->
+                </select>
+            </div>
+
+            <button class="w3-btn w3-red" id="deleteAnimal">get rid of animal</button>
+
+            <button class="w3-circle w3-green" id="exit">exit</button>
+
+        </div>
+
+        <!--has all the animal images displayed (supposed to look like actual zoo from birds eye view)-->
+        <div class="w3-panel w3-pale-green w3-leftbar w3-rightbar w3-border-blue" id="zoo">
+            <!--this is populated with a table filled with clickable images of the current animals in the zoo-->
+        </div>
+
+        <div class="" id="stats">
+
+            <div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue" id="actionLog">
+                <p>you started a zoo</p>
+            </div>
+        </div>
+
+    </body>
+</html>
+
